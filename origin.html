@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Домашнее задание</title>
+	<meta name="description" content="Это вот тут будет хранится домашнее задание которое я сделал с квадратиком">
+	<meta name="keywords" content="домашнее, задание"></meta>
+</head>
+<body>
+	<div class="shell">
+		<div class="square">
+			<div class="circle">
+				<button><a href="homework.html">Ссылка</a></button>
+				
+			</div>
+		</div>
+	</div>
+
+<style type="text/css">
+	body {
+		width: 100vw;
+		height: 100vh;
+	}
+
+	.shell {
+		width: 100%;
+		height: 100%;
+		background-color: grey;
+		display: flex;
+	}
+
+
+	.square {
+		border: 1px solid yellow;
+		background-color: white;
+	    height: 40vw;
+	    width: 40vw;
+	   	margin: auto;
+	   	display: flex;
+	}
+
+	.circle {             /*почему этот блок не полсушался укказаний на флекс, ведь он блтжайший родитель, почему получилось добиться центра только использовав верх низ право лево????*/
+		width: 20vw;								/*хочу чтобы все блоки позиционировались относительно родительского и относительно флекса*/
+		height: 20vw;
+		border-radius: 50%;
+		border: 1px solid #f4f4f4;
+		background-color: red;
+		margin: auto;
+		display: flex;
+	}
+
+	button {							/*тот же вопрос по поводу отсительности к родительскому элементу???*/
+		width: 5vw;
+		height: 2vw; 
+		border: 1px solid red;
+		background-color: gold;
+		margin: auto;
+	}
+
+	a:hover {
+		color: violet;
+	}
+
+	a:visited {
+		color: white;
+	}
+
+
+
+</style>
+	
+</body>
+</html>
